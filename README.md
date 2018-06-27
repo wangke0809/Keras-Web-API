@@ -11,7 +11,7 @@
  - flask
  - flask_upload
  - keras
- - reuqests
+ - requests
  - translate
  
 # 使用
