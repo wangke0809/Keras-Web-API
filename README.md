@@ -4,7 +4,7 @@
 
 直接用的Keras InceptionResNetV2的训练模型做分类，然后把分类结果翻译为中文，然后拿着结果爬营养数据。
 
-用了不到一天时间完成，中间遇到了tf后端静态图加载问题，采用了先前向传播一次比较low的思路，以及上传图片经磁盘保存后再送入模型，很多可以优化的地方,后来发现[Keras博客有篇文章](https://blog.keras.io/building-a-simple-keras-deep-learning-rest-api.html)，可供学习参考。
+用了不到一天时间完成，中间遇到了tf后端静态图加载问题，采用了先前向传播一次比较low的思路，以及上传图片经磁盘保存后再送入模型，很多可以优化的地方，后来发现[Keras博客有篇文章](https://blog.keras.io/building-a-simple-keras-deep-learning-rest-api.html)，可供学习参考。
 
 # 依赖
 
@@ -12,14 +12,15 @@
  - flask_upload
  - keras
  - reuqests
-
+ - translate
+ 
 # 使用
 
     python app.py
 
 # 客户端
 
-舍友做的安卓客户端。
+舍友做的[安卓客户端](https://github.com/xygzp415/SmartEye)。
 
 ![图1](https://github.com/wangke0809/Keras-Web-API/raw/master/readimg/figure1.png)
 
